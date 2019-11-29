@@ -1,4 +1,4 @@
-// prj0 项目忽略文件和 vscode 配置文件 
+// 项目忽略文件和 vscode 配置文件 
 {
     "configurations": [
         {
