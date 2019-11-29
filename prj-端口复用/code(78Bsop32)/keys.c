@@ -17,6 +17,6 @@ void GetKeys() {
     keyValue = tempKeyValue;
     tempKeyValue = D_keyNull;
   }
-  //按键口P10，恢复为输出
+  //按键口P10，恢复为输出 
   P1MODL = 0xaa;
 }
