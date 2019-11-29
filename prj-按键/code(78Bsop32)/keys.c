@@ -10,7 +10,7 @@ void GetKeys() {
 		  keyValue=lastKeyValue;
 			lastKeyValue=D_keyNull;
 	//	}
-		
+	
 		//keyValue = D_keyValue1;
   }
 }
