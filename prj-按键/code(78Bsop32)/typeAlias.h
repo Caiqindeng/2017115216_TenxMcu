@@ -1,4 +1,4 @@
-
+//看门狗清零 
 #ifndef __typeAlias_h
 #define __typeAlias_h
 
