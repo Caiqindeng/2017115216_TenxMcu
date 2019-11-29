@@ -16,7 +16,7 @@ void INT0_int(void) interrupt 0 {
   IE0 = 0; // clear interrupt flag
 }
 //=============================================================================
-// Function:	void TIMER0_int(void)
+// Function:	void TIMER0_int(void) 
 // Purpose:	TIMER0 interrupt vector
 // Input:	none
 // OutPut:	none
