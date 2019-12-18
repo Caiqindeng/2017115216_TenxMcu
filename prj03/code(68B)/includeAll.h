@@ -1,5 +1,5 @@
-#include <INTRINS.H>
-#include <REGtenxTM52F5278B.h>
+#include "INTRINS.H"
+#include "REGtenxTM52F5268B.h"
 
 #include "typeAlias.h"
 

@@ -6,6 +6,7 @@
 // 定义高低电平变量
 #define D_ledOn 1  //高电位亮
 #define D_ledOff 0 //低点位灭
+
 // Globle Var -----------------------------------------
 #ifdef __display_c
 
@@ -14,13 +15,20 @@
 #endif
 
 // 定义LED1亮灯、关灯函数
-#define F_led1On()  P_led1 = D_ledOn
-#define F_led1Off() P_led1 = D_ledOff
+// #define F_led1On()  P_led1 = D_ledOn
+// #define F_led1Off() P_led1 = D_ledOff
 
 // 定义LED2亮灯、关灯函数
+// #define F_led2On() P_led2 = D_ledOn
+// #define F_led2Off() P_led2 = D_ledOff
+
+// Action Macro: exp: #define F_getData() ------
+#define F_led1On() P_led1 = D_ledOn
+#define F_led1Off() P_led1 = D_ledOff
+#define F_led1Neg() P_led1 = ~P_led1
 #define F_led2On() P_led2 = D_ledOn
 #define F_led2Off() P_led2 = D_ledOff
-
+#define F_led2Neg() P_led2 = ~P_led2
 // Function ------------------------------------
  
 #endif 

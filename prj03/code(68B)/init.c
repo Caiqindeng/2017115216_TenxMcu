@@ -26,7 +26,8 @@ void SysInit() {
   // IO 模式初始化
   P1MODL = 0xaa; 
   // IO 状态初始化
-  F_ledOff();
+  F_led1Off();
+	F_led2Off();
   // T2 初始化  7.3728Mhz/2 = 3686400Hz
   //  3686400Hz/3686.4 = 1000Hz = 1ms timer2 interrupt
   TH2 = (65536 - 3686) / 256;

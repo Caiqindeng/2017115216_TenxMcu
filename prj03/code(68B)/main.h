@@ -1,4 +1,4 @@
-ifndef __main_h
+#ifndef __main_h
 #define __main_h
 // Hal: exp: #define P_led P10 -----------------
 
@@ -15,5 +15,9 @@ ifndef __main_h
 // Action Macro: exp: #define F_getData() ------
 
 // Function ------------------------------------
-
+void TimeProcess();
+void TaskProcess();
+void TaskSetting();
+void DisplayProcess();
+void Delay(unsigned  int t);
 #endif
