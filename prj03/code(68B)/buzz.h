@@ -1,24 +1,25 @@
 #ifndef __buzz_h
     #define __buzz_h
 //HAL--------------------
-	#buzzH1
-    #define F_buzz()        P_buzz = ~P_buzz
+      #define P_buzz    P1_5
+      #define F_buzz()  P_buzz = ~P_buzz
 //Const--------------------
-    #define D_buzzLastTime  25    //30*4ms(T0) = last 100ms per Buzz
-	#define D_buzzConvertAdTime 200 //200*4ms(T0) = reuse Pin convert to Ad mode
+    #define D_buzzLastTime   25    //25*4ms(T0) = last 100ms per Buzz
+    #define D_buzzIntervalTime   250 //250*4ms(T0) = Interval 1s between buzzs
 //Var----------------------
     #ifdef __buzz_c
-        uint8_t buzzLastTimer ;
-        uint8_t buzzConvertAdTimer ;
-        uint8_t buzzCounter ;
-		bit bBuzz ;
+        bit b100Buzz;
+        uint8_t buzzLastTimer;
+        uint8_t buzzCounter;
+
     #else
-        extern uint8_t buzzLastTimer ;
-        extern uint8_t buzzConvertAdTimer ;
-        extern uint8_t buzzCounter ;
-		extern bit bBuzz ;
+        extern  bit b100Buzz;
+        extern uint8_t buzzLastTimer;
+        extern uint8_t buzzCounter;
+
     #endif
 
 //Function----------------------
-	void Buzz(void) ;
+	void BuzzCount(uint8_t count);
+    void Buzz();
 #endif

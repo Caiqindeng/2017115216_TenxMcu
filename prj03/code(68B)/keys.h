@@ -1,7 +1,10 @@
 #ifndef __keys_h
 #define __keys_h
 // Hal: exp: #define P_led P10 -----------------
-#define P_key1 P1_0
+#define P_key1 P3_4
+#define P_key2 P3_2
+#define P_key3 P1_7
+#define P_key4 P1_2
 // Const: exp: #define D_data 1 ----------------
 #define D_keyNull 0
 #define D_keyValue1 1

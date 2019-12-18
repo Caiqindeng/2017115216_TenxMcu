@@ -1,4 +1,4 @@
-ifndef __temperature_h
+#ifndef __temperature_h
 #define __temperature_h
 // Hal: exp: #define P_led P10 -----------------
 

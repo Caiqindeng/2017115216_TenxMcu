@@ -1,13 +1,14 @@
 
 #define __buzz_c
 
-#include    "includeAll.h"
-
-void Buzz(void)
-{
-	//config reuse pin P3_4 to output
-	bBuzz = 1;
-	#buzzC1
-	buzzLastTimer = D_buzzLastTime;
-	//buzzConvertAdTimer = D_buzzConvertAdTime;
+#include "includeAll.h"
+#include "buzz.h"
+void BuzzCount(uint8_t count)
+{	
+    buzzCounter = count ; 
 }
+
+void Buzz(){
+    buzzLastTimer = D_buzzLastTime ;
+}
+
