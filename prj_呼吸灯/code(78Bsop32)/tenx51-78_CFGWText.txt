@@ -1,0 +1,10 @@
+01. WDTE (0:7~6)	WDT disable , Set SFR 0xF7 to  enable/disable WDT
+02. PROT (1:7)	Enable
+03. XRSTE (1:6)	Disable
+04. LVR (1:5~4)	LV Reset 2.9V
+05. VCCFLT (1:3)	VCC Line Filter enable
+06. PWRSAV (1:2)	Disable
+07. MVCLOCK (1:1)	MOVC Unlock
+08. IAP data reserve range (2:3~0)	No reserve range
+09. ICE Mode(2:4)	4-Wire
+10. On Chip CRC16(2:5)	Disable
