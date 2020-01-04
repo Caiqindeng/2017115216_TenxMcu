@@ -12,12 +12,22 @@
 // Globle Var -----------------------------------------
 #ifdef __keys_c
 uint8_t keyValue;
+bit key_flag;
 #else
 extern uint8_t keyValue;
+extern bit key_flag;
 #endif
 
 // Action Macro: exp: #define F_getData() ------
 
 // Function ------------------------------------
 void GetKeys();
+
+void GetKeys();
+
+void GetKey2();
+
+void GetKey3();
+
+void GetKey1();
 #endif
